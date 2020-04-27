@@ -7,7 +7,7 @@ def nyc_pigeon_organizer(data)
     
     value.reduce { | memo, (color, names_array) |
         
-      memo = memo + x
+      memo = memo + names_array
       memo
       
       
