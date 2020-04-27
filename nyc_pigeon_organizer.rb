@@ -11,7 +11,7 @@ def nyc_pigeon_organizer(data)
         blah
     
       }
-      binding.pry
+     # binding.pry
       omem = blah
     }
     
