@@ -4,18 +4,19 @@ def nyc_pigeon_organizer(data)
   # make array of names 
   
   pigeons = data.reduce { | memo, (key, value) |
-    value.reduce { | memo, (colors, names_array) |
-      names_array.reduce { | memo, x |
+    value.reduce { | omem, (colors, names_array) |
+      names_array.reduce { | blah, x |
        # binding.pry 
-        memo = memo + x 
-        memo
+        blah = blah + x 
+        blah
     
       }
       binding.pry
-      memo
+      omem = blah
     }
     
    # binding.pry
+    memo = omem 
     memo
   }
   
