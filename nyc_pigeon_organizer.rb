@@ -14,6 +14,7 @@ def nyc_pigeon_organizer(data)
 # remove repeats
 
   binding.pry 
+  
   pigeons = pigeons.uniq
 
   # form template hash 
