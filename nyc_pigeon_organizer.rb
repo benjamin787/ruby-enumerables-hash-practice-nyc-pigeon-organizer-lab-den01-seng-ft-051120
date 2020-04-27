@@ -6,6 +6,7 @@ def nyc_pigeon_organizer(data)
   pigeons = data.inject { | memo, (key, value) |
     
     value.inject { | memo, (color, names_array) |
+    binding.pry 
       names_array.inject { |memo, x|
         
         memo = memo + x
@@ -17,7 +18,7 @@ def nyc_pigeon_organizer(data)
     
     memo
   }
-  binding.pry
+  
     
 # remove repeats
 
