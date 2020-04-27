@@ -10,9 +10,10 @@ def nyc_pigeon_organizer(data)
         memo = memo + x 
     
       }
+      binding.pry
     }
     
-    binding.pry
+   # binding.pry
     memo
   }
   
