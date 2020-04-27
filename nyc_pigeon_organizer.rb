@@ -15,9 +15,9 @@ def nyc_pigeon_organizer(data)
   
   # form template hash 
   
-  answer = pigeons.reduce { | omem, a |
+  answer = pigeons.reduce({}) { | omem, a |
     
-    omem = {} if !omem
+    
     omem[a] = { :color => [], :gender => [], :lives => [] }
     omem
   }
