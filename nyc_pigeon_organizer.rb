@@ -25,7 +25,7 @@ def nyc_pigeon_organizer(data)
    # memo
   #}
   
-  pigeons = pigeons.drop(1).uniq
+  pigeons = pigeons.drop(1).flatten.uniq
   
 # remove repeats
 
