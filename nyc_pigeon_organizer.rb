@@ -25,12 +25,15 @@ def nyc_pigeon_organizer(data)
    # memo
   #}
   
-    
+  pigeons.flatten.shift
+  
 # remove repeats
 
-  binding.pry 
+  
   
   pigeons = pigeons.uniq
+  
+  binding.pry 
 
   # form template hash 
   
