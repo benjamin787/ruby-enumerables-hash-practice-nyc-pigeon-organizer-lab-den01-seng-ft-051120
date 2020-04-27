@@ -25,7 +25,7 @@ def nyc_pigeon_organizer(data)
   pigeons = pigeons.uniq
   
   # form template hash 
-  binding.pry 
+  
   answer = pigeons.reduce { | omem, a |
   
     omem[a] = { :color => [], :gender => [], :lives => [] }
