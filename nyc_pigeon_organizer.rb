@@ -9,32 +9,10 @@ def nyc_pigeon_organizer(data)
     memo
   }
   
-  #  value.reduce { | memo, (colors, names_array) |
-   #   names_array.reduce { | memo, x |
-       # binding.pry 
-    #    memo = memo + x 
-     #   memo
-    
-      #}
-     # binding.pry
-      #memo
-    #}
-    
-   # binding.pry
-     
-   # memo
-  #}
+  # cleanup array 
   
   pigeons = pigeons.drop(1).flatten.uniq
   
-# remove repeats
-
-  
-  
-  #pigeons = pigeons.uniq
-  
-   
-
   # form template hash 
   
   answer = pigeons.reduce { | omem, a |
