@@ -6,13 +6,11 @@ def nyc_pigeon_organizer(data)
   pigeons = data.reduce { | memo, (key, value) |
     
     value.reduce { | memo, (color, names_array) |
-    
-      names_array.reduce { |memo, x|
         
-        memo = memo + x
-        memo
-      }
+      memo = memo + x
       memo
+      
+      
       
     }
     
