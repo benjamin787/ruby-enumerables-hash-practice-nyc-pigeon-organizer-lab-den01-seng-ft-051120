@@ -8,9 +8,11 @@ def nyc_pigeon_organizer(data)
       names_array.reduce { | memo, x |
         binding.pry 
         memo = memo + x 
+        memo
     
       }
      # binding.pry
+     memo
     }
     
    # binding.pry
