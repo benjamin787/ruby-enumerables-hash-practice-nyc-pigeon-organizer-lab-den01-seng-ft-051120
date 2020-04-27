@@ -12,7 +12,7 @@ def nyc_pigeon_organizer(data)
     
       }
       binding.pry
-     memo
+      memo
     }
     
    # binding.pry
