@@ -3,22 +3,27 @@ def nyc_pigeon_organizer(data)
   
   # make array of names 
   
-  pigeons = data.reduce { | memo, (key, value) |
-    value.reduce { | memo, (colors, names_array) |
-      names_array.reduce { | memo, x |
+  pigeons = data[:color].reduce { | memo, (key, value) |
+    memo = value[0] if !memo
+    memo = memo + value
+    memo
+  }
+  
+  #  value.reduce { | memo, (colors, names_array) |
+   #   names_array.reduce { | memo, x |
        # binding.pry 
-        memo = memo + x 
-        memo
+    #    memo = memo + x 
+     #   memo
     
-      }
+      #}
      # binding.pry
-      memo
-    }
+      #memo
+    #}
     
    # binding.pry
      
-    memo
-  }
+   # memo
+  #}
   
     
 # remove repeats
