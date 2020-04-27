@@ -3,11 +3,11 @@ def nyc_pigeon_organizer(data)
   
   # make array of names 
   
-  pigeons = data.inject { | memo, (key, value) |
+  pigeons = data.reduce { | memo, (key, value) |
     
-    value.inject { | memo, (color, names_array) |
+    value.reduce { | memo, (color, names_array) |
     
-      names_array.inject { |memo, x|
+      names_array.reduce { |memo, x|
         
         memo = memo + x
         memo
