@@ -21,7 +21,7 @@ def nyc_pigeon_organizer(data)
 # remove repeats
 
   pigeons = pigeons.uniq
-  
+  binding.pry 
   # form template hash 
   
   answer = pigeons.reduce { | omem, a |
