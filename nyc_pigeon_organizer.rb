@@ -33,7 +33,7 @@ def nyc_pigeon_organizer(data)
   
   #pigeons = pigeons.uniq
   
-  binding.pry 
+   
 
   # form template hash 
   
