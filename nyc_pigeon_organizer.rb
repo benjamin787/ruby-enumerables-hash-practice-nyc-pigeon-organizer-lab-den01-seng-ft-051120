@@ -11,8 +11,9 @@ def nyc_pigeon_organizer(data)
     
       }
     }
-    memo
+    
     binding.pry
+    memo
   }
   
     
