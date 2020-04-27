@@ -3,25 +3,18 @@ def nyc_pigeon_organizer(data)
   
   # make array of names 
   
-  pigeons = data.reduce { | memo, (key, value) |
+  value = data.reduce { | memo, (key, value) |
     
-    value.reduce { | memo, (color, names_array) |
-        
-      memo = memo + names_array
-      memo
-      
-      
-      
-    }
-    
+    memo = memo + value
     memo
+      
   }
   
     
 # remove repeats
-
-  pigeons = pigeons.uniq
   binding.pry 
+  pigeons = pigeons.uniq
+
   # form template hash 
   
   answer = pigeons.reduce { | omem, a |
