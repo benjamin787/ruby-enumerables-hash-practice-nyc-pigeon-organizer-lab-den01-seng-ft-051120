@@ -17,7 +17,7 @@ def nyc_pigeon_organizer(data)
   
   answer = pigeons.reduce { | omem, a |
     
-  
+    omem = {} if !omem
     omem[a] = { :color => [], :gender => [], :lives => [] }
     omem
   }
